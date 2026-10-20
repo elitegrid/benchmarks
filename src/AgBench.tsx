@@ -8,7 +8,6 @@ import {
   type GridApi,
   type GridReadyEvent,
 } from 'ag-grid-community'
-import { RowGroupingModule } from 'ag-grid-enterprise'
 import type { Driver } from './bench'
 import type { Row } from './data'
 import {
@@ -18,27 +17,13 @@ import {
   VIEWPORT_WIDTH,
   DEFAULT_COLUMN_COUNT,
   benchColumns,
-  GROUP_FIELD,
-  GROUP_SUM_FIELD,
-  GROUP_AVG_FIELD,
-  GROUP_EXPANDED_LEVELS,
-  GROUP_COLUMN_WIDTH,
   ROW_BUFFER,
 } from './shared-config'
 
-// Row grouping with aggregation is NOT in AG Grid Community — there is no
-// RowGroupingModule there at all. The grouped scenario therefore measures
-// EliteGrid's free feature against AG Grid's PAID one, and that is the only
-// comparison available: the Community tier cannot run this shape.
-//
-// The enterprise module is registered only when the grouped scenario asks
-// for it, so the existing matrix keeps registering exactly what it always
-// did and its recorded numbers do not move.
-const GROUPED = new URLSearchParams(window.location.search).get('group') === '1'
-
-ModuleRegistry.registerModules(
-  GROUPED ? [AllCommunityModule, RowGroupingModule] : [AllCommunityModule]
-)
+// Community only, deliberately. The paid tier is not installed and not
+// measured: every number in the report is AG Grid Community against
+// EliteGrid.
+ModuleRegistry.registerModules([AllCommunityModule])
 
 export const AG_ROW_SELECTOR = '.ag-row'
 export const AG_CELL_SELECTOR = '.ag-cell'
@@ -52,18 +37,12 @@ const AG_FILTERS: Record<string, string> = {
 
 // Built from the shared spec rather than written out, so a column added to the
 // axis cannot reach one grid and not the other.
-function buildColumnDefs(count: number, grouped: boolean): ColDef<Row>[] {
+function buildColumnDefs(count: number): ColDef<Row>[] {
   return benchColumns(count).map((c) => ({
     field: c.field as keyof Row & string,
     headerName: c.header,
     width: c.width,
     ...(c.filter ? { filter: AG_FILTERS[c.filter] } : {}),
-    // `hide` matches EliteGrid, which drops the grouped column from the
-    // body by default (keepGroupedColumns is false). Without it AG Grid
-    // would render one more column than its competitor.
-    ...(grouped && c.field === GROUP_FIELD ? { rowGroup: true, hide: true } : {}),
-    ...(grouped && c.field === GROUP_SUM_FIELD ? { aggFunc: 'sum' } : {}),
-    ...(grouped && c.field === GROUP_AVG_FIELD ? { aggFunc: 'avg' } : {}),
   }))
 }
 
@@ -80,19 +59,14 @@ const defaultColDef: ColDef<Row> = {
 export function AgBench({
   data,
   columnCount = DEFAULT_COLUMN_COUNT,
-  grouped = false,
   onDriver,
 }: {
   data: Row[]
   columnCount?: number
-  grouped?: boolean
   onDriver: (d: Driver) => void
 }) {
   const apiRef = useRef<GridApi<Row> | null>(null)
-  const columnDefs = useMemo(
-    () => buildColumnDefs(columnCount, grouped),
-    [columnCount, grouped]
-  )
+  const columnDefs = useMemo(() => buildColumnDefs(columnCount), [columnCount])
 
   const onGridReady = useCallback(
     (e: GridReadyEvent<Row>) => {
@@ -143,13 +117,6 @@ export function AgBench({
         getRowId={(p) => String(p.data.id)}
         rowHeight={ROW_HEIGHT}
         headerHeight={HEADER_HEIGHT}
-        groupDefaultExpanded={grouped ? GROUP_EXPANDED_LEVELS : undefined}
-        grandTotalRow={grouped ? 'bottom' : undefined}
-        autoGroupColumnDef={
-          grouped
-            ? { headerName: 'Department', width: GROUP_COLUMN_WIDTH }
-            : undefined
-        }
         // Pinned from shared-config rather than left to the default. 10 IS
         // AG Grid's default `rowBuffer`, so its recorded numbers do not move
         // — the point is that the window is now declared in one place for

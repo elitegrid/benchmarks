@@ -31,9 +31,6 @@ const rowCount = Number(params.get('rows') ?? 1000)
 // Column axis. Defaults to the base eight, so every URL that predates the axis
 // behaves exactly as it did.
 const columnCount = Number(params.get('cols') ?? DEFAULT_COLUMN_COUNT)
-// Grouping scenario. Off everywhere else, so the existing matrix is
-// untouched by it.
-const grouped = params.get('group') === '1'
 
 // Generated once, before anything mounts, and deliberately outside every
 // measured window — data generation is the harness's cost, not the grid's.
@@ -66,25 +63,11 @@ export function App() {
       }}
     >
       {mounted && library === 'ag' && (
-        <AgBench
-          data={data}
-          columnCount={columnCount}
-          grouped={grouped}
-          onDriver={onDriver}
-        />
+        <AgBench data={data} columnCount={columnCount} onDriver={onDriver} />
       )}
       {mounted && library === 'elite' && (
-        <EliteBench
-          data={data}
-          columnCount={columnCount}
-          grouped={grouped}
-          onDriver={onDriver}
-        />
+        <EliteBench data={data} columnCount={columnCount} onDriver={onDriver} />
       )}
-      {/* Neither of these two supports the grouping scenario, so it is not
-          passed to them: TanStack's grouping would need a renderer we have
-          not written, and react-data-grid's lives on TreeDataGrid. The
-          grouped run stays a two-library comparison. */}
       {mounted && library === 'tanstack' && (
         <TanStackBench
           data={data}

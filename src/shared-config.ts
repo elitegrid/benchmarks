@@ -134,14 +134,3 @@ export function totalColumnWidth(count: number): number {
   return benchColumns(count).reduce((sum, c) => sum + c.width, 0)
 }
 
-// ── Grouping scenario ──────────────────────────────────────────────────────
-// The shape the landing page hero runs: one grouping level over department,
-// a sum and an average aggregated across every row, and the first group open.
-// Both drivers read these, so neither can group a different column, aggregate
-// a different field or open a different number of levels than the other.
-
-export const GROUP_FIELD = 'department'
-export const GROUP_SUM_FIELD = 'salary'
-export const GROUP_AVG_FIELD = 'score'
-export const GROUP_EXPANDED_LEVELS = 1
-export const GROUP_COLUMN_WIDTH = COLUMN_WIDTHS.department

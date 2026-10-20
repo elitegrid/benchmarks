@@ -20,9 +20,6 @@ importers:
       ag-grid-community:
         specifier: 36.0.2
         version: 36.0.2
-      ag-grid-enterprise:
-        specifier: 36.0.2
-        version: 36.0.2
       ag-grid-react:
         specifier: 36.0.2
         version: 36.0.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5)
@@ -40,8 +37,8 @@ importers:
         specifier: 1.61.1
         version: 1.61.1
       '@types/node':
-        specifier: 22.10.2
-        version: 22.10.2
+        specifier: 22.20.5
+        version: 22.20.5
       '@types/react':
         specifier: 19.2.14
         version: 19.2.14
@@ -50,7 +47,7 @@ importers:
         version: 19.2.3(@types/react@19.2.14)
       '@vitejs/plugin-react':
         specifier: 6.0.1
-        version: 6.0.1(vite@8.0.9(@types/node@22.10.2)(esbuild@0.27.7))
+        version: 6.0.1(vite@8.0.9(@types/node@22.20.5)(esbuild@0.27.7))
       esbuild:
         specifier: 0.27.7
         version: 0.27.7
@@ -59,7 +56,7 @@ importers:
         version: 5.9.3
       vite:
         specifier: 8.0.9
-        version: 8.0.9(@types/node@22.10.2)(esbuild@0.27.7)
+        version: 8.0.9(@types/node@22.20.5)(esbuild@0.27.7)
 
 packages:
 
@@ -381,8 +378,8 @@ packages:
   '@tybys/wasm-util@0.10.4':
     resolution: {integrity: sha512-W3c4gRigFS0T/Ma4qIYF3GDAc5AQdHb1yL5znJT1Zv1YaD9Kitx656wBjvr19qbiosmZT8lWDM5BEMynUqX65A==}
 
-  '@types/node@22.10.2':
-    resolution: {integrity: sha512-Xxr6BBRCAOQixvonOye19wnzyDiUtTeqldOOmj3CkeblonbccA12PFwlufvRdrpjXxqnmUaeiU5EOA+7s5diUQ==}
+  '@types/node@22.20.5':
+    resolution: {integrity: sha512-U2+DNr+wSjpsTS/wZGYHq7GcwfuSmKiKvoPvK22zwTlRhU91yOniN4qRR5KhIjvif7ysw/dz/hKmfDH0Ris4aA==}
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
@@ -405,26 +402,11 @@ packages:
       babel-plugin-react-compiler:
         optional: true
 
-  ag-charts-community@14.0.2:
-    resolution: {integrity: sha512-a0iQAd85HdYUeCdo90vNcgV1zYVwr9muulhcmpdAdKOJjj0I9CtS+x9v6yMx8QDcSQkBWa8E8xJDIW6tbVfESg==}
-
-  ag-charts-core@14.0.2:
-    resolution: {integrity: sha512-tfvAwdE9ZRsOXqB8xPeYDy9O47Cy9ewSNH87yRONvTgMPHzsiJxJSXfQDQSG272zq9IJvfXxh0+SyPlMsTAkHg==}
-
-  ag-charts-enterprise@14.0.2:
-    resolution: {integrity: sha512-QHxV0Jv31in97yrBsnKPxG+wCu9hOB+V4cYprJ9xoA1+VRUDd1rbzFwED1G4CIqqm+oFYdgy+IBiDnSudZmuIg==}
-
-  ag-charts-locale@14.0.2:
-    resolution: {integrity: sha512-uuv4VS9AUc7bd0j6XNocD/3Aw9JsQiRme4ce2pW4AL/fqDQnL6HAVDhADJtS7NKkB3BKpeUxDGLOdBPXOLQWEA==}
-
   ag-charts-types@14.0.2:
     resolution: {integrity: sha512-F7ZG0g8Y+iKhJi50AfZRwEyUM/TBsNyh2IoXB0JaDN97lnbemIK8GE5kF1eBtXtN4mcC+lPXK9oZUeVXwO9EWA==}
 
   ag-grid-community@36.0.2:
     resolution: {integrity: sha512-TINZfuFvMY2nc3JfQHiUWT7dNIxI89ZxS5XkXIPi/rYICoNupRqpaM41KVzGPPfSkM0AwhuzTFxAiF08zEkV1Q==}
-
-  ag-grid-enterprise@36.0.2:
-    resolution: {integrity: sha512-5km2v3BvcbjNMJPaPVTi/0vhpSPFCT598acX+F1ZmjUrUTQPFjccS5M+zMlgdIlcD2eCEIDtoNFDadxbld05yw==}
 
   ag-grid-react@36.0.2:
     resolution: {integrity: sha512-yVPmqdhx1zp06FLyZmwmIxIO57w4ko+qN64MXgPlBMJVL0MNA5hULqAY/+SoB4cd0bBHqz8okuuAbHHpu5QoHQ==}
@@ -622,8 +604,8 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
-  undici-types@6.20.0:
-    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+  undici-types@6.21.0:
+    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
   use-sync-external-store@1.7.0:
     resolution: {integrity: sha512-6L+EeigHMQhdaIPNIFUKwfWJSwWFQ8gJbJ2DLOs5sDIegTwR9fRxvnM3uciHKjIZhFz+KAv2emhWMRvDmMcY8A==}
@@ -874,9 +856,9 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@types/node@22.10.2':
+  '@types/node@22.20.5':
     dependencies:
-      undici-types: 6.20.0
+      undici-types: 6.21.0
 
   '@types/react-dom@19.2.3(@types/react@19.2.14)':
     dependencies:
@@ -886,31 +868,10 @@ snapshots:
     dependencies:
       csstype: 3.2.3
 
-  '@vitejs/plugin-react@6.0.1(vite@8.0.9(@types/node@22.10.2)(esbuild@0.27.7))':
+  '@vitejs/plugin-react@6.0.1(vite@8.0.9(@types/node@22.20.5)(esbuild@0.27.7))':
     dependencies:
       '@rolldown/pluginutils': 1.0.0-rc.7
-      vite: 8.0.9(@types/node@22.10.2)(esbuild@0.27.7)
-
-  ag-charts-community@14.0.2:
-    dependencies:
-      ag-charts-core: 14.0.2
-      ag-charts-locale: 14.0.2
-      ag-charts-types: 14.0.2
-    optional: true
-
-  ag-charts-core@14.0.2:
-    dependencies:
-      ag-charts-types: 14.0.2
-    optional: true
-
-  ag-charts-enterprise@14.0.2:
-    dependencies:
-      ag-charts-community: 14.0.2
-      ag-charts-core: 14.0.2
-    optional: true
-
-  ag-charts-locale@14.0.2:
-    optional: true
+      vite: 8.0.9(@types/node@22.20.5)(esbuild@0.27.7)
 
   ag-charts-types@14.0.2: {}
 
@@ -918,14 +879,6 @@ snapshots:
     dependencies:
       ag-charts-types: 14.0.2
       ag-stack: 36.0.2
-
-  ag-grid-enterprise@36.0.2:
-    dependencies:
-      ag-grid-community: 36.0.2
-      ag-stack: 36.0.2
-    optionalDependencies:
-      ag-charts-community: 14.0.2
-      ag-charts-enterprise: 14.0.2
 
   ag-grid-react@36.0.2(react-dom@19.2.5(react@19.2.5))(react@19.2.5):
     dependencies:
@@ -1111,13 +1064,13 @@ snapshots:
 
   typescript@5.9.3: {}
 
-  undici-types@6.20.0: {}
+  undici-types@6.21.0: {}
 
   use-sync-external-store@1.7.0(react@19.2.5):
     dependencies:
       react: 19.2.5
 
-  vite@8.0.9(@types/node@22.10.2)(esbuild@0.27.7):
+  vite@8.0.9(@types/node@22.20.5)(esbuild@0.27.7):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
@@ -1125,6 +1078,6 @@ snapshots:
       rolldown: 1.0.0-rc.16
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 22.10.2
+      '@types/node': 22.20.5
       esbuild: 0.27.7
       fsevents: 2.3.3

@@ -8,11 +8,6 @@ import {
   HEADER_HEIGHT,
   DEFAULT_COLUMN_COUNT,
   benchColumns,
-  GROUP_FIELD,
-  GROUP_SUM_FIELD,
-  GROUP_AVG_FIELD,
-  GROUP_EXPANDED_LEVELS,
-  GROUP_COLUMN_WIDTH,
   ROW_BUFFER,
   COLUMN_BUFFER,
 } from './shared-config'
@@ -22,40 +17,26 @@ export const ELITE_CELL_SELECTOR = '.yg-cell'
 
 // Built from the shared spec rather than written out, so a column added to the
 // axis cannot reach one grid and not the other.
-function buildColumns(count: number, grouped: boolean): ColumnDef<Row>[] {
+function buildColumns(count: number): ColumnDef<Row>[] {
   return benchColumns(count).map((c) => ({
     field: c.field as keyof Row & string,
     header: c.header,
     size: { width: c.width },
     ...(c.filter ? { filter: { type: c.filter } } : {}),
-    // Aggregates exist only in the grouped scenario, and only on the two
-    // fields AG Grid is given an aggFunc for. Anything else would be work
-    // one library does and the other does not.
-    ...(grouped && c.field === GROUP_SUM_FIELD
-      ? { value: { aggregate: (v: number[]) => v.reduce((a, b) => a + Number(b), 0) } }
-      : {}),
-    ...(grouped && c.field === GROUP_AVG_FIELD
-      ? { value: { aggregate: (v: number[]) => v.reduce((a, b) => a + Number(b), 0) / v.length } }
-      : {}),
   })) as ColumnDef<Row>[]
 }
 
 export function EliteBench({
   data,
   columnCount = DEFAULT_COLUMN_COUNT,
-  grouped = false,
   onDriver,
 }: {
   data: Row[]
   columnCount?: number
-  grouped?: boolean
   onDriver: (d: Driver) => void
 }) {
   const apiRef = useRef<GridAPI<Row> | null>(null)
-  const columns = useMemo(
-    () => buildColumns(columnCount, grouped),
-    [columnCount, grouped]
-  )
+  const columns = useMemo(() => buildColumns(columnCount), [columnCount])
 
   // NOTE: `createGrid` runs HERE, inside the first render after the harness
   // flips `mounted`, so engine construction is inside the measured mount
@@ -79,18 +60,6 @@ export function EliteBench({
         // no editing. Anything enabled on one side is enabled on the other.
         sorting: { enabled: true, multiSort: false },
         filtering: { enabled: true },
-        // Undefined in every pre-existing scenario, so none of the recorded
-        // numbers move: the grouped run is a separate scenario, not a new
-        // default. Shape matches the landing hero and the AG Grid config.
-        grouping: grouped
-          ? {
-              model: [GROUP_FIELD],
-              expandedByDefault: GROUP_EXPANDED_LEVELS,
-              grandTotal: 'bottom' as const,
-              panel: false,
-              groupColumn: { header: 'Department', width: GROUP_COLUMN_WIDTH },
-            }
-          : undefined,
         pagination: { enabled: false },
         selection: { mode: 'none' },
         editing: { enabled: false },
@@ -112,7 +81,7 @@ export function EliteBench({
           },
         },
       }),
-    [data, columns, grouped]
+    [data, columns]
   )
 
   useEffect(() => {
