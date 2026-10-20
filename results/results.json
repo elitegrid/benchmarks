@@ -1,0 +1,2258 @@
+{
+  "generatedAt": "2026-10-20T09:25:33.860Z",
+  "environment": {
+    "browser": "chromium 149.0.7827.55",
+    "platform": "Windows_NT 10.0.19045",
+    "cpu": "11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz",
+    "cores": 4,
+    "memoryGB": 12,
+    "nodeVersion": "v22.14.0",
+    "eliteGridVersion": "0.2.0",
+    "agGridVersion": "36.0.2",
+    "tanstackVersion": "9.3.1",
+    "rdgVersion": "7.0.0-beta.62",
+    "viewport": "1000 × 600"
+  },
+  "results": [
+    {
+      "library": "elite",
+      "rows": 1000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 80.30000000074506,
+        "min": 75.69999999925494,
+        "max": 93.10000000149012
+      },
+      "mountCommitMs": {
+        "median": 31.799999997019768,
+        "min": 28.199999999254942,
+        "max": 39
+      },
+      "sortCommitMs": {
+        "median": 13.199999999254942,
+        "min": 13,
+        "max": 16.899999998509884
+      },
+      "filterCommitMs": {
+        "median": 8.800000000745058,
+        "min": 8.299999997019768,
+        "max": 10.399999998509884
+      },
+      "clearFilterCommitMs": {
+        "median": 12.100000001490116,
+        "min": 7.899999998509884,
+        "max": 13.600000001490116
+      },
+      "scrollP50Ms": {
+        "median": 17.5,
+        "min": 16.899999998509884,
+        "max": 18.5
+      },
+      "scrollP95Ms": {
+        "median": 22.300000000745058,
+        "min": 21.600000001490116,
+        "max": 22.899999998509884
+      },
+      "scrollMaxMs": {
+        "median": 25.300000000745058,
+        "min": 22.899999998509884,
+        "max": 25.800000000745058
+      },
+      "scrollFps": {
+        "median": 60.0767366720291,
+        "min": 59.856144057095115,
+        "max": 60.11922804894897
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.399999998509884,
+        "max": 24.5
+      },
+      "scrollXFps": {
+        "median": 59.90133897117381,
+        "min": 59.82003719910435,
+        "max": 59.98588567404919
+      },
+      "gridHeapMB": {
+        "median": 1.9224786758422852,
+        "min": 1.9224672317504883,
+        "max": 1.9232492446899414
+      },
+      "workloadHeapMB": {
+        "median": 2.892991065979004,
+        "min": 2.8927202224731445,
+        "max": 2.8936967849731445
+      },
+      "renderedRows": 35,
+      "renderedCells": 280
+    },
+    {
+      "library": "ag",
+      "rows": 1000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 159.69999999925494,
+        "min": 150,
+        "max": 167.19999999925494
+      },
+      "mountCommitMs": {
+        "median": 138.89999999850988,
+        "min": 128.40000000223517,
+        "max": 146.09999999776483
+      },
+      "sortCommitMs": {
+        "median": 11.5,
+        "min": 10.799999997019768,
+        "max": 12.600000001490116
+      },
+      "filterCommitMs": {
+        "median": 11.699999999254942,
+        "min": 11.5,
+        "max": 14.199999999254942
+      },
+      "clearFilterCommitMs": {
+        "median": 5.5,
+        "min": 4.699999999254942,
+        "max": 5.899999998509884
+      },
+      "scrollP50Ms": {
+        "median": 16.899999998509884,
+        "min": 16.300000000745058,
+        "max": 17.900000002235174
+      },
+      "scrollP95Ms": {
+        "median": 23.199999999254942,
+        "min": 22.599999997764826,
+        "max": 24.199999999254942
+      },
+      "scrollMaxMs": {
+        "median": 28,
+        "min": 23.5,
+        "max": 41.899999998509884
+      },
+      "scrollFps": {
+        "median": 59.523809523831716,
+        "min": 57.540737875406705,
+        "max": 60.088870935096786
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0.8403361344537815
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.5,
+        "max": 24.5
+      },
+      "scrollXFps": {
+        "median": 59.982862039462354,
+        "min": 59.89832385353677,
+        "max": 60.070671378091866
+      },
+      "gridHeapMB": {
+        "median": 4.774361610412598,
+        "min": 4.774216651916504,
+        "max": 4.774529457092285
+      },
+      "workloadHeapMB": {
+        "median": 6.965892791748047,
+        "min": 6.946368217468262,
+        "max": 6.96750545501709
+      },
+      "renderedRows": 34,
+      "renderedCells": 272
+    },
+    {
+      "library": "tanstack",
+      "rows": 1000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 34.30000000074506,
+        "min": 33.099999997764826,
+        "max": 34.900000002235174
+      },
+      "mountCommitMs": {
+        "median": 16.100000001490116,
+        "min": 15.399999998509884,
+        "max": 16.399999998509884
+      },
+      "sortCommitMs": {
+        "median": 8.400000002235174,
+        "min": 8.199999999254942,
+        "max": 11.5
+      },
+      "filterCommitMs": {
+        "median": 7.5,
+        "min": 4.800000000745058,
+        "max": 9.699999999254942
+      },
+      "clearFilterCommitMs": {
+        "median": 2.900000002235174,
+        "min": 2.7999999970197678,
+        "max": 5.300000000745058
+      },
+      "scrollP50Ms": {
+        "median": 18.5,
+        "min": 18.100000001490116,
+        "max": 19
+      },
+      "scrollP95Ms": {
+        "median": 21.899999998509884,
+        "min": 21.600000001490116,
+        "max": 22.300000000745058
+      },
+      "scrollMaxMs": {
+        "median": 26.399999998509884,
+        "min": 23.599999997764826,
+        "max": 29
+      },
+      "scrollFps": {
+        "median": 59.82605198337627,
+        "min": 59.670059670037375,
+        "max": 59.886266418466036
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.400000002235174,
+        "max": 24.5
+      },
+      "scrollXFps": {
+        "median": 60.00100842028705,
+        "min": 59.835076427974364,
+        "max": 60.23181657136451
+      },
+      "gridHeapMB": {
+        "median": 1.1833467483520508,
+        "min": 1.1826868057250977,
+        "max": 1.1835107803344727
+      },
+      "workloadHeapMB": {
+        "median": 2.53952693939209,
+        "min": 2.5276784896850586,
+        "max": 2.5397138595581055
+      },
+      "renderedRows": 35,
+      "renderedCells": 280
+    },
+    {
+      "library": "rdg",
+      "rows": 1000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "harness",
+        "filter": "none"
+      },
+      "mountPaintMs": {
+        "median": 41.5,
+        "min": 32.900000002235174,
+        "max": 44
+      },
+      "mountCommitMs": {
+        "median": 13.5,
+        "min": 6.900000002235174,
+        "max": 17.199999999254942
+      },
+      "sortCommitMs": {
+        "median": 5.600000001490116,
+        "min": 5.300000000745058,
+        "max": 7
+      },
+      "filterCommitMs": null,
+      "clearFilterCommitMs": null,
+      "scrollP50Ms": {
+        "median": 19.099999997764826,
+        "min": 19,
+        "max": 19.300000000745058
+      },
+      "scrollP95Ms": {
+        "median": 21.199999999254942,
+        "min": 20.900000002235174,
+        "max": 21.5
+      },
+      "scrollMaxMs": {
+        "median": 25.099999997764826,
+        "min": 23.5,
+        "max": 27
+      },
+      "scrollFps": {
+        "median": 59.78697749200617,
+        "min": 59.70598565044956,
+        "max": 60.04339270401608
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 24.400000002235174,
+        "min": 24.199999999254942,
+        "max": 24.600000001490116
+      },
+      "scrollXFps": {
+        "median": 59.90133897117381,
+        "min": 59.80200010055234,
+        "max": 60.116190957312455
+      },
+      "gridHeapMB": {
+        "median": 0.8553943634033203,
+        "min": 0.8553829193115234,
+        "max": 0.8554058074951172
+      },
+      "workloadHeapMB": {
+        "median": 1.54522705078125,
+        "min": 1.5437736511230469,
+        "max": 1.5468950271606445
+      },
+      "renderedRows": 22,
+      "renderedCells": 176
+    },
+    {
+      "library": "elite",
+      "rows": 10000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 85.5,
+        "min": 80.69999999925494,
+        "max": 95
+      },
+      "mountCommitMs": {
+        "median": 38.599999997764826,
+        "min": 36.400000002235174,
+        "max": 43.19999999925494
+      },
+      "sortCommitMs": {
+        "median": 17.399999998509884,
+        "min": 17.199999999254942,
+        "max": 17.799999997019768
+      },
+      "filterCommitMs": {
+        "median": 11.600000001490116,
+        "min": 11.199999999254942,
+        "max": 12.699999999254942
+      },
+      "clearFilterCommitMs": {
+        "median": 8.300000000745058,
+        "min": 7.899999998509884,
+        "max": 13.699999999254942
+      },
+      "scrollP50Ms": {
+        "median": 17.5,
+        "min": 16.300000000745058,
+        "max": 17.900000002235174
+      },
+      "scrollP95Ms": {
+        "median": 22.399999998509884,
+        "min": 21.400000002235174,
+        "max": 22.800000000745058
+      },
+      "scrollMaxMs": {
+        "median": 25.200000002980232,
+        "min": 22.099999997764826,
+        "max": 28
+      },
+      "scrollFps": {
+        "median": 60.079769778270794,
+        "min": 59.90435439214699,
+        "max": 60.119228048835815
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 24.599999997764826,
+        "min": 24.400000002235174,
+        "max": 24.600000001490116
+      },
+      "scrollXFps": {
+        "median": 59.99495840685657,
+        "min": 59.81703026042482,
+        "max": 60.22876809391392
+      },
+      "gridHeapMB": {
+        "median": 2.815214157104492,
+        "min": 2.814699172973633,
+        "max": 2.815469741821289
+      },
+      "workloadHeapMB": {
+        "median": 3.8158655166625977,
+        "min": 3.8154497146606445,
+        "max": 3.816563606262207
+      },
+      "renderedRows": 35,
+      "renderedCells": 280
+    },
+    {
+      "library": "ag",
+      "rows": 10000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 170.5,
+        "min": 162.10000000149012,
+        "max": 185.60000000149012
+      },
+      "mountCommitMs": {
+        "median": 146.10000000149012,
+        "min": 140.19999999925494,
+        "max": 161.69999999925494
+      },
+      "sortCommitMs": {
+        "median": 29.699999999254942,
+        "min": 27,
+        "max": 30.699999999254942
+      },
+      "filterCommitMs": {
+        "median": 33.100000001490116,
+        "min": 32,
+        "max": 50.600000001490116
+      },
+      "clearFilterCommitMs": {
+        "median": 8.600000001490116,
+        "min": 8.399999998509884,
+        "max": 13.199999999254942
+      },
+      "scrollP50Ms": {
+        "median": 16.199999999254942,
+        "min": 15.699999999254942,
+        "max": 17
+      },
+      "scrollP95Ms": {
+        "median": 23.100000001490116,
+        "min": 22.300000000745058,
+        "max": 23.5
+      },
+      "scrollMaxMs": {
+        "median": 28.599999997764826,
+        "min": 23.5,
+        "max": 29.600000001490116
+      },
+      "scrollFps": {
+        "median": 59.09813269772154,
+        "min": 58.485280385229125,
+        "max": 59.90435439214699
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.400000002235174,
+        "max": 24.699999999254942
+      },
+      "scrollXFps": {
+        "median": 60.05854446344289,
+        "min": 59.89530903963931,
+        "max": 60.10708152336358
+      },
+      "gridHeapMB": {
+        "median": 6.606514930725098,
+        "min": 6.606354713439941,
+        "max": 6.60653018951416
+      },
+      "workloadHeapMB": {
+        "median": 8.8151273727417,
+        "min": 8.813833236694336,
+        "max": 8.820392608642578
+      },
+      "renderedRows": 34,
+      "renderedCells": 272
+    },
+    {
+      "library": "tanstack",
+      "rows": 10000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 46.5,
+        "min": 44.5,
+        "max": 49.600000001490116
+      },
+      "mountCommitMs": {
+        "median": 28.899999998509884,
+        "min": 27.200000002980232,
+        "max": 30.600000001490116
+      },
+      "sortCommitMs": {
+        "median": 26.400000002235174,
+        "min": 25.099999997764826,
+        "max": 34.899999998509884
+      },
+      "filterCommitMs": {
+        "median": 12.900000002235174,
+        "min": 10.599999997764826,
+        "max": 14.899999998509884
+      },
+      "clearFilterCommitMs": {
+        "median": 5.899999998509884,
+        "min": 4.899999998509884,
+        "max": 7.5
+      },
+      "scrollP50Ms": {
+        "median": 18.700000002980232,
+        "min": 18.100000001490116,
+        "max": 19.099999997764826
+      },
+      "scrollP95Ms": {
+        "median": 22,
+        "min": 21.300000000745058,
+        "max": 22.100000001490116
+      },
+      "scrollMaxMs": {
+        "median": 27.899999998509884,
+        "min": 23.900000002235174,
+        "max": 32.30000000074506
+      },
+      "scrollFps": {
+        "median": 59.844103595675136,
+        "min": 59.71197752012973,
+        "max": 59.92547084296271
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.5,
+        "max": 24.5
+      },
+      "scrollXFps": {
+        "median": 59.9647266313933,
+        "min": 59.80200010055234,
+        "max": 60.134418111117085
+      },
+      "gridHeapMB": {
+        "median": 5.461978912353516,
+        "min": 5.461872100830078,
+        "max": 5.462062835693359
+      },
+      "workloadHeapMB": {
+        "median": 6.831999778747559,
+        "min": 6.820643424987793,
+        "max": 6.838000297546387
+      },
+      "renderedRows": 35,
+      "renderedCells": 280
+    },
+    {
+      "library": "rdg",
+      "rows": 10000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "harness",
+        "filter": "none"
+      },
+      "mountPaintMs": {
+        "median": 36.30000000074506,
+        "min": 34.100000001490116,
+        "max": 37.79999999701977
+      },
+      "mountCommitMs": {
+        "median": 7.400000002235174,
+        "min": 6.800000000745058,
+        "max": 16.199999999254942
+      },
+      "sortCommitMs": {
+        "median": 7.399999998509884,
+        "min": 6.800000000745058,
+        "max": 7.800000000745058
+      },
+      "filterCommitMs": null,
+      "clearFilterCommitMs": null,
+      "scrollP50Ms": {
+        "median": 19,
+        "min": 19,
+        "max": 19.100000001490116
+      },
+      "scrollP95Ms": {
+        "median": 21.199999999254942,
+        "min": 21,
+        "max": 21.899999998509884
+      },
+      "scrollMaxMs": {
+        "median": 23.299999997019768,
+        "min": 22.599999997764826,
+        "max": 27
+      },
+      "scrollFps": {
+        "median": 59.880239520935625,
+        "min": 59.73895582329317,
+        "max": 60.037334140512854
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.300000000745058,
+        "max": 24.5
+      },
+      "scrollXFps": {
+        "median": 59.979838709677416,
+        "min": 59.81101728997471,
+        "max": 60.201345677161356
+      },
+      "gridHeapMB": {
+        "median": 0.8549642562866211,
+        "min": 0.8549528121948242,
+        "max": 0.854975700378418
+      },
+      "workloadHeapMB": {
+        "median": 1.538121223449707,
+        "min": 1.537339210510254,
+        "max": 1.540543556213379
+      },
+      "renderedRows": 22,
+      "renderedCells": 176
+    },
+    {
+      "library": "elite",
+      "rows": 100000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 204.40000000223517,
+        "min": 179.10000000149012,
+        "max": 266.8999999985099
+      },
+      "mountCommitMs": {
+        "median": 152.60000000149012,
+        "min": 134.60000000149012,
+        "max": 205.30000000074506
+      },
+      "sortCommitMs": {
+        "median": 41.30000000074506,
+        "min": 38.899999998509884,
+        "max": 62.30000000074506
+      },
+      "filterCommitMs": {
+        "median": 21.5,
+        "min": 18.699999999254942,
+        "max": 27.600000001490116
+      },
+      "clearFilterCommitMs": {
+        "median": 14.200000002980232,
+        "min": 9.600000001490116,
+        "max": 19.099999997764826
+      },
+      "scrollP50Ms": {
+        "median": 17.199999999254942,
+        "min": 16.5,
+        "max": 18.599999997764826
+      },
+      "scrollP95Ms": {
+        "median": 22.100000001490116,
+        "min": 20.199999999254942,
+        "max": 23.100000001490116
+      },
+      "scrollMaxMs": {
+        "median": 27.899999998509884,
+        "min": 22.5,
+        "max": 31.899999998509884
+      },
+      "scrollFps": {
+        "median": 59.91340247711442,
+        "min": 59.434621915914626,
+        "max": 60.22876809391392
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.5,
+        "max": 24.5
+      },
+      "scrollXFps": {
+        "median": 59.99495840685657,
+        "min": 59.859154929577464,
+        "max": 60.06763919030361
+      },
+      "gridHeapMB": {
+        "median": 11.932021141052246,
+        "min": 11.931857109069824,
+        "max": 11.935969352722168
+      },
+      "workloadHeapMB": {
+        "median": 13.260824203491211,
+        "min": 13.260137557983398,
+        "max": 13.26789665222168
+      },
+      "renderedRows": 35,
+      "renderedCells": 280
+    },
+    {
+      "library": "ag",
+      "rows": 100000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 278.69999999925494,
+        "min": 274.9000000022352,
+        "max": 287.69999999925494
+      },
+      "mountCommitMs": {
+        "median": 259,
+        "min": 254.5,
+        "max": 270
+      },
+      "sortCommitMs": {
+        "median": 211.19999999925494,
+        "min": 203.5,
+        "max": 221.5
+      },
+      "filterCommitMs": {
+        "median": 65.59999999776483,
+        "min": 64.10000000149012,
+        "max": 75.79999999701977
+      },
+      "clearFilterCommitMs": {
+        "median": 18.400000002235174,
+        "min": 17.600000001490116,
+        "max": 21.099999997764826
+      },
+      "scrollP50Ms": {
+        "median": 18,
+        "min": 17.199999999254942,
+        "max": 18.299999997019768
+      },
+      "scrollP95Ms": {
+        "median": 22.199999999254942,
+        "min": 21.5,
+        "max": 23
+      },
+      "scrollMaxMs": {
+        "median": 25.199999999254942,
+        "min": 23.5,
+        "max": 29.100000001490116
+      },
+      "scrollFps": {
+        "median": 59.73895582329317,
+        "min": 59.18631254347547,
+        "max": 59.90737011683914
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.5,
+        "max": 24.599999997764826
+      },
+      "scrollXFps": {
+        "median": 60.15265632106111,
+        "min": 59.919436052366564,
+        "max": 60.22267206477732
+      },
+      "gridHeapMB": {
+        "median": 25.923580169677734,
+        "min": 25.923534393310547,
+        "max": 25.92667007446289
+      },
+      "workloadHeapMB": {
+        "median": 28.117076873779297,
+        "min": 28.11129093170166,
+        "max": 28.121063232421875
+      },
+      "renderedRows": 34,
+      "renderedCells": 272
+    },
+    {
+      "library": "tanstack",
+      "rows": 100000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 169,
+        "min": 159.90000000223517,
+        "max": 211.79999999701977
+      },
+      "mountCommitMs": {
+        "median": 137.89999999850988,
+        "min": 132.20000000298023,
+        "max": 194.89999999850988
+      },
+      "sortCommitMs": {
+        "median": 254.30000000074506,
+        "min": 247.10000000149012,
+        "max": 255.59999999776483
+      },
+      "filterCommitMs": {
+        "median": 55.100000001490116,
+        "min": 52.80000000074506,
+        "max": 65.89999999850988
+      },
+      "clearFilterCommitMs": {
+        "median": 26.399999998509884,
+        "min": 24.899999998509884,
+        "max": 27.5
+      },
+      "scrollP50Ms": {
+        "median": 18.699999999254942,
+        "min": 18.400000002235174,
+        "max": 19.199999999254942
+      },
+      "scrollP95Ms": {
+        "median": 22.099999997764826,
+        "min": 21.599999997764826,
+        "max": 22.699999999254942
+      },
+      "scrollMaxMs": {
+        "median": 29.600000001490116,
+        "min": 26.599999997764826,
+        "max": 34.30000000074506
+      },
+      "scrollFps": {
+        "median": 59.84711325693481,
+        "min": 59.64912280701754,
+        "max": 59.95566303907463
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0.8403361344537815
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.399999998509884,
+        "max": 24.599999997764826
+      },
+      "scrollXFps": {
+        "median": 60.08583690987125,
+        "min": 59.93150684927009,
+        "max": 60.097974849822904
+      },
+      "gridHeapMB": {
+        "median": 49.23893356323242,
+        "min": 49.23018932342529,
+        "max": 49.239070892333984
+      },
+      "workloadHeapMB": {
+        "median": 50.619261741638184,
+        "min": 50.61626052856445,
+        "max": 50.622108459472656
+      },
+      "renderedRows": 35,
+      "renderedCells": 280
+    },
+    {
+      "library": "rdg",
+      "rows": 100000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "harness",
+        "filter": "none"
+      },
+      "mountPaintMs": {
+        "median": 36.5,
+        "min": 33.899999998509884,
+        "max": 49.099999997764826
+      },
+      "mountCommitMs": {
+        "median": 9.800000000745058,
+        "min": 7.399999998509884,
+        "max": 13.699999999254942
+      },
+      "sortCommitMs": {
+        "median": 26.399999998509884,
+        "min": 25.600000001490116,
+        "max": 34.899999998509884
+      },
+      "filterCommitMs": null,
+      "clearFilterCommitMs": null,
+      "scrollP50Ms": {
+        "median": 18.800000000745058,
+        "min": 18.100000001490116,
+        "max": 19.300000000745058
+      },
+      "scrollP95Ms": {
+        "median": 21.099999997764826,
+        "min": 20.900000002235174,
+        "max": 22.199999999254942
+      },
+      "scrollMaxMs": {
+        "median": 27,
+        "min": 24,
+        "max": 30.699999999254942
+      },
+      "scrollFps": {
+        "median": 59.856144057095115,
+        "min": 59.79899497487437,
+        "max": 60.06763919030361
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 23.899999998509884,
+        "max": 24.600000001490116
+      },
+      "scrollXFps": {
+        "median": 59.865177583235436,
+        "min": 59.82905982905982,
+        "max": 60.13137948458817
+      },
+      "gridHeapMB": {
+        "median": 0.8549823760986328,
+        "min": 0.8549709320068359,
+        "max": 0.8551464080810547
+      },
+      "workloadHeapMB": {
+        "median": 1.5383214950561523,
+        "min": 1.5379743576049805,
+        "max": 1.5396442413330078
+      },
+      "renderedRows": 22,
+      "renderedCells": 176
+    },
+    {
+      "library": "elite",
+      "rows": 1000000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 1769.4000000022352,
+        "min": 1756.5,
+        "max": 1907.5
+      },
+      "mountCommitMs": {
+        "median": 1719.800000000745,
+        "min": 1682.5,
+        "max": 1856.9000000022352
+      },
+      "sortCommitMs": {
+        "median": 304.19999999925494,
+        "min": 287.5999999977648,
+        "max": 305.1000000014901
+      },
+      "filterCommitMs": {
+        "median": 132.19999999925494,
+        "min": 121.79999999701977,
+        "max": 439.9000000022352
+      },
+      "clearFilterCommitMs": {
+        "median": 20.599999997764826,
+        "min": 13.300000000745058,
+        "max": 24.700000002980232
+      },
+      "scrollP50Ms": {
+        "median": 16.900000002235174,
+        "min": 16.100000001490116,
+        "max": 17.599999997764826
+      },
+      "scrollP95Ms": {
+        "median": 21.900000002235174,
+        "min": 21,
+        "max": 23.100000001490116
+      },
+      "scrollMaxMs": {
+        "median": 44.400000002235174,
+        "min": 29.900000002235174,
+        "max": 84.09999999776483
+      },
+      "scrollFps": {
+        "median": 59.09226338263779,
+        "min": 55.763823805060916,
+        "max": 59.532743008699136
+      },
+      "scrollLongFramePct": {
+        "median": 0.8403361344537815,
+        "min": 0,
+        "max": 2.5210084033613445
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.299999997019768,
+        "max": 24.600000001490116
+      },
+      "scrollXFps": {
+        "median": 59.979838709677416,
+        "min": 59.81402362402614,
+        "max": 60.088870935096786
+      },
+      "gridHeapMB": {
+        "median": 103.7252779006958,
+        "min": 103.558762550354,
+        "max": 103.88808155059814
+      },
+      "workloadHeapMB": {
+        "median": 108.49662399291992,
+        "min": 108.32881164550781,
+        "max": 108.6598014831543
+      },
+      "renderedRows": 35,
+      "renderedCells": 280
+    },
+    {
+      "library": "ag",
+      "rows": 1000000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 1937.3999999985099,
+        "min": 1919.0999999977648,
+        "max": 2026.800000000745
+      },
+      "mountCommitMs": {
+        "median": 1919.1000000014901,
+        "min": 1899.300000000745,
+        "max": 2007.800000000745
+      },
+      "sortCommitMs": {
+        "median": 3972.10000000149,
+        "min": 3882.89999999851,
+        "max": 4013.099999997765
+      },
+      "filterCommitMs": {
+        "median": 384.5,
+        "min": 377.4000000022352,
+        "max": 402
+      },
+      "clearFilterCommitMs": {
+        "median": 142.60000000149012,
+        "min": 131.69999999925494,
+        "max": 145.90000000223517
+      },
+      "scrollP50Ms": {
+        "median": 32.399999998509884,
+        "min": 31.699999999254942,
+        "max": 33.69999999925494
+      },
+      "scrollP95Ms": {
+        "median": 42.69999999925494,
+        "min": 42.5,
+        "max": 43.20000000298023
+      },
+      "scrollMaxMs": {
+        "median": 54.30000000074506,
+        "min": 44.80000000074506,
+        "max": 59.099999997764826
+      },
+      "scrollFps": {
+        "median": 29.12312473996148,
+        "min": 28.191035724443523,
+        "max": 29.701734681143144
+      },
+      "scrollLongFramePct": {
+        "median": 38.655462184873954,
+        "min": 28.57142857142857,
+        "max": 52.94117647058824
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.400000002235174,
+        "max": 24.5
+      },
+      "scrollXFps": {
+        "median": 59.97077054878563,
+        "min": 59.87421383647799,
+        "max": 60.10708152336358
+      },
+      "gridHeapMB": {
+        "median": 227.9118185043335,
+        "min": 227.82715511322021,
+        "max": 228.03076076507568
+      },
+      "workloadHeapMB": {
+        "median": 230.12237071990967,
+        "min": 230.05615139007568,
+        "max": 230.2484655380249
+      },
+      "renderedRows": 34,
+      "renderedCells": 272
+    },
+    {
+      "library": "tanstack",
+      "rows": 1000000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 1382.5,
+        "min": 1372.5,
+        "max": 1458.0999999977648
+      },
+      "mountCommitMs": {
+        "median": 1357,
+        "min": 1346.5,
+        "max": 1441.3999999985099
+      },
+      "sortCommitMs": {
+        "median": 4666.5,
+        "min": 4652.699999999255,
+        "max": 4711
+      },
+      "filterCommitMs": {
+        "median": 1018.8000000007451,
+        "min": 975.1999999992549,
+        "max": 1058.7999999970198
+      },
+      "clearFilterCommitMs": {
+        "median": 311.29999999701977,
+        "min": 309.5,
+        "max": 323.20000000298023
+      },
+      "scrollP50Ms": {
+        "median": 19,
+        "min": 18.399999998509884,
+        "max": 19
+      },
+      "scrollP95Ms": {
+        "median": 22.300000000745058,
+        "min": 21.800000000745058,
+        "max": 23.800000000745058
+      },
+      "scrollMaxMs": {
+        "median": 32.599999997764826,
+        "min": 32,
+        "max": 33.69999999925494
+      },
+      "scrollFps": {
+        "median": 59.792985629495426,
+        "min": 59.75995580785321,
+        "max": 59.982862039462354
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0.8403361344537815
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.5,
+        "max": 24.5
+      },
+      "scrollXFps": {
+        "median": 59.90133897117381,
+        "min": 59.82003719899232,
+        "max": 60.24096385535352
+      },
+      "gridHeapMB": {
+        "median": 494.9330644607544,
+        "min": 494.924427986145,
+        "max": 494.93414783477783
+      },
+      "workloadHeapMB": {
+        "median": 507.76989459991455,
+        "min": 507.76723194122314,
+        "max": 507.77447986602783
+      },
+      "renderedRows": 35,
+      "renderedCells": 280
+    },
+    {
+      "library": "rdg",
+      "rows": 1000000,
+      "columns": 8,
+      "reps": 5,
+      "provides": {
+        "sort": "harness",
+        "filter": "none"
+      },
+      "mountPaintMs": {
+        "median": 43.5,
+        "min": 42.400000002235174,
+        "max": 69.19999999925494
+      },
+      "mountCommitMs": {
+        "median": 12,
+        "min": 11.799999997019768,
+        "max": 12.100000001490116
+      },
+      "sortCommitMs": {
+        "median": 756.0999999977648,
+        "min": 748.8999999985099,
+        "max": 798.6999999992549
+      },
+      "filterCommitMs": null,
+      "clearFilterCommitMs": null,
+      "scrollP50Ms": {
+        "median": 18.699999999254942,
+        "min": 18.599999997764826,
+        "max": 18.899999998509884
+      },
+      "scrollP95Ms": {
+        "median": 20.899999998509884,
+        "min": 20.800000000745058,
+        "max": 21.800000000745058
+      },
+      "scrollMaxMs": {
+        "median": 25.5,
+        "min": 25,
+        "max": 34.399999998509884
+      },
+      "scrollFps": {
+        "median": 59.93754407176857,
+        "min": 58.97804430778819,
+        "max": 59.982862039462354
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 1.680672268907563
+      },
+      "scrollXP95Ms": {
+        "median": 24.5,
+        "min": 24.5,
+        "max": 24.599999997764826
+      },
+      "scrollXFps": {
+        "median": 60.070671378091866,
+        "min": 59.89832385364908,
+        "max": 60.18307793453455
+      },
+      "gridHeapMB": {
+        "median": 0.8553218841552734,
+        "min": 0.8553104400634766,
+        "max": 0.8553218841552734
+      },
+      "workloadHeapMB": {
+        "median": 7.74549674987793,
+        "min": 7.745145797729492,
+        "max": 7.745855331420898
+      },
+      "renderedRows": 22,
+      "renderedCells": 176
+    },
+    {
+      "library": "elite",
+      "rows": 10000,
+      "columns": 30,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 119.79999999701977,
+        "min": 115.19999999925494,
+        "max": 126.19999999925494
+      },
+      "mountCommitMs": {
+        "median": 54,
+        "min": 52.80000000074506,
+        "max": 61.100000001490116
+      },
+      "sortCommitMs": {
+        "median": 22,
+        "min": 21.100000001490116,
+        "max": 27
+      },
+      "filterCommitMs": {
+        "median": 14.199999999254942,
+        "min": 12.899999998509884,
+        "max": 19.600000001490116
+      },
+      "clearFilterCommitMs": {
+        "median": 8.699999999254942,
+        "min": 7.800000000745058,
+        "max": 11.400000002235174
+      },
+      "scrollP50Ms": {
+        "median": 16.300000000745058,
+        "min": 16.099999997764826,
+        "max": 18.600000001490116
+      },
+      "scrollP95Ms": {
+        "median": 22.399999998509884,
+        "min": 21.599999997764826,
+        "max": 22.800000000745058
+      },
+      "scrollMaxMs": {
+        "median": 27.399999998509884,
+        "min": 22.800000000745058,
+        "max": 30.599999997764826
+      },
+      "scrollFps": {
+        "median": 59.826051983264215,
+        "min": 59.40198672199722,
+        "max": 60.052482842102606
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 31.399999998509884,
+        "min": 26.300000000745058,
+        "max": 34.30000000074506
+      },
+      "scrollXFps": {
+        "median": 56.48912940278925,
+        "min": 54.50714547445838,
+        "max": 57.24731803533105
+      },
+      "gridHeapMB": {
+        "median": 3.019399642944336,
+        "min": 3.0190296173095703,
+        "max": 3.0226688385009766
+      },
+      "workloadHeapMB": {
+        "median": 4.338432312011719,
+        "min": 4.3376312255859375,
+        "max": 4.596750259399414
+      },
+      "renderedRows": 35,
+      "renderedCells": 385
+    },
+    {
+      "library": "ag",
+      "rows": 10000,
+      "columns": 30,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 177.30000000074506,
+        "min": 173.89999999850988,
+        "max": 183.69999999925494
+      },
+      "mountCommitMs": {
+        "median": 153.19999999925494,
+        "min": 150.5,
+        "max": 159
+      },
+      "sortCommitMs": {
+        "median": 34.80000000074506,
+        "min": 32,
+        "max": 42.600000001490116
+      },
+      "filterCommitMs": {
+        "median": 32.30000000074506,
+        "min": 22.800000000745058,
+        "max": 45.5
+      },
+      "clearFilterCommitMs": {
+        "median": 9.899999998509884,
+        "min": 7.400000002235174,
+        "max": 13.5
+      },
+      "scrollP50Ms": {
+        "median": 16.600000001490116,
+        "min": 16.300000000745058,
+        "max": 17.700000002980232
+      },
+      "scrollP95Ms": {
+        "median": 22.5,
+        "min": 22,
+        "max": 24.100000001490116
+      },
+      "scrollMaxMs": {
+        "median": 26.099999997764826,
+        "min": 25.800000000745058,
+        "max": 27.300000000745058
+      },
+      "scrollFps": {
+        "median": 59.526787054130004,
+        "min": 58.44506654875149,
+        "max": 59.99495840685657
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 28.5,
+        "min": 27.699999999254942,
+        "max": 33.69999999925494
+      },
+      "scrollXFps": {
+        "median": 55.207608443516584,
+        "min": 53.11077389990123,
+        "max": 55.71682741827816
+      },
+      "gridHeapMB": {
+        "median": 7.248408317565918,
+        "min": 7.231352806091309,
+        "max": 7.24869441986084
+      },
+      "workloadHeapMB": {
+        "median": 10.494648933410645,
+        "min": 10.486510276794434,
+        "max": 11.18117618560791
+      },
+      "renderedRows": 34,
+      "renderedCells": 408
+    },
+    {
+      "library": "tanstack",
+      "rows": 10000,
+      "columns": 30,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 48.400000002235174,
+        "min": 47.20000000298023,
+        "max": 64.19999999925494
+      },
+      "mountCommitMs": {
+        "median": 29.700000002980232,
+        "min": 28.700000002980232,
+        "max": 44.899999998509884
+      },
+      "sortCommitMs": {
+        "median": 35.69999999925494,
+        "min": 28.099999997764826,
+        "max": 36.19999999925494
+      },
+      "filterCommitMs": {
+        "median": 15.900000002235174,
+        "min": 14.800000000745058,
+        "max": 18.299999997019768
+      },
+      "clearFilterCommitMs": {
+        "median": 7.600000001490116,
+        "min": 6.699999999254942,
+        "max": 9.199999999254942
+      },
+      "scrollP50Ms": {
+        "median": 18.400000002235174,
+        "min": 18,
+        "max": 19
+      },
+      "scrollP95Ms": {
+        "median": 21.600000001490116,
+        "min": 21.5,
+        "max": 22.899999998509884
+      },
+      "scrollMaxMs": {
+        "median": 25.700000002980232,
+        "min": 23,
+        "max": 32.5
+      },
+      "scrollFps": {
+        "median": 59.74795400904853,
+        "min": 59.694005517933284,
+        "max": 60.140496285462575
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 23.399999998509884,
+        "min": 22.800000000745058,
+        "max": 25.400000002235174
+      },
+      "scrollXFps": {
+        "median": 59.919436052366564,
+        "min": 59.74195491746022,
+        "max": 60.010085728693895
+      },
+      "gridHeapMB": {
+        "median": 5.543642997741699,
+        "min": 5.543402671813965,
+        "max": 5.543978691101074
+      },
+      "workloadHeapMB": {
+        "median": 8.175460815429688,
+        "min": 8.034967422485352,
+        "max": 8.186714172363281
+      },
+      "renderedRows": 35,
+      "renderedCells": 385
+    },
+    {
+      "library": "rdg",
+      "rows": 10000,
+      "columns": 30,
+      "reps": 5,
+      "provides": {
+        "sort": "harness",
+        "filter": "none"
+      },
+      "mountPaintMs": {
+        "median": 37.600000001490116,
+        "min": 35.599999997764826,
+        "max": 39.69999999925494
+      },
+      "mountCommitMs": {
+        "median": 8.199999999254942,
+        "min": 7.300000000745058,
+        "max": 15.899999998509884
+      },
+      "sortCommitMs": {
+        "median": 11.300000000745058,
+        "min": 10.899999998509884,
+        "max": 16.099999997764826
+      },
+      "filterCommitMs": null,
+      "clearFilterCommitMs": null,
+      "scrollP50Ms": {
+        "median": 18.900000002235174,
+        "min": 18.900000002235174,
+        "max": 19.199999999254942
+      },
+      "scrollP95Ms": {
+        "median": 21.099999997764826,
+        "min": 20.899999998509884,
+        "max": 21.600000001490116
+      },
+      "scrollMaxMs": {
+        "median": 23.199999999254942,
+        "min": 22,
+        "max": 30.5
+      },
+      "scrollFps": {
+        "median": 60.040363269424816,
+        "min": 59.832067977206634,
+        "max": 60.10404565891689
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 22.299999997019768,
+        "min": 21.5,
+        "max": 23.5
+      },
+      "scrollXFps": {
+        "median": 59.97077054878563,
+        "min": 59.777967549013844,
+        "max": 60.00100842028705
+      },
+      "gridHeapMB": {
+        "median": 0.9250574111938477,
+        "min": 0.9250574111938477,
+        "max": 0.9250574111938477
+      },
+      "workloadHeapMB": {
+        "median": 2.131500244140625,
+        "min": 1.8465042114257812,
+        "max": 2.1368627548217773
+      },
+      "renderedRows": 22,
+      "renderedCells": 242
+    },
+    {
+      "library": "elite",
+      "rows": 10000,
+      "columns": 80,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 119,
+        "min": 110.5,
+        "max": 124.60000000149012
+      },
+      "mountCommitMs": {
+        "median": 56.19999999925494,
+        "min": 52.19999999925494,
+        "max": 58.599999997764826
+      },
+      "sortCommitMs": {
+        "median": 22.5,
+        "min": 20.199999999254942,
+        "max": 23.199999999254942
+      },
+      "filterCommitMs": {
+        "median": 14.299999997019768,
+        "min": 13.699999999254942,
+        "max": 19
+      },
+      "clearFilterCommitMs": {
+        "median": 10.599999997764826,
+        "min": 10.5,
+        "max": 13.299999997019768
+      },
+      "scrollP50Ms": {
+        "median": 17.800000000745058,
+        "min": 17,
+        "max": 18.300000000745058
+      },
+      "scrollP95Ms": {
+        "median": 22.099999997764826,
+        "min": 21.399999998509884,
+        "max": 22.300000000745058
+      },
+      "scrollMaxMs": {
+        "median": 23.400000002235174,
+        "min": 22.399999998509884,
+        "max": 24.899999998509884
+      },
+      "scrollFps": {
+        "median": 59.940563139049694,
+        "min": 59.670059670037375,
+        "max": 60.0373341406257
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 22.199999999254942,
+        "min": 22,
+        "max": 22.800000000745058
+      },
+      "scrollXFps": {
+        "median": 58.945908460449814,
+        "min": 58.45367914341988,
+        "max": 59.55061802541034
+      },
+      "gridHeapMB": {
+        "median": 3.089956283569336,
+        "min": 3.0895862579345703,
+        "max": 3.0929698944091797
+      },
+      "workloadHeapMB": {
+        "median": 4.459016799926758,
+        "min": 4.453317642211914,
+        "max": 4.774600982666016
+      },
+      "renderedRows": 35,
+      "renderedCells": 385
+    },
+    {
+      "library": "ag",
+      "rows": 10000,
+      "columns": 80,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 181.40000000223517,
+        "min": 164.69999999925494,
+        "max": 192
+      },
+      "mountCommitMs": {
+        "median": 157.19999999925494,
+        "min": 141,
+        "max": 162.19999999925494
+      },
+      "sortCommitMs": {
+        "median": 35,
+        "min": 33.69999999925494,
+        "max": 68.79999999701977
+      },
+      "filterCommitMs": {
+        "median": 34.099999997764826,
+        "min": 18.5,
+        "max": 45.599999997764826
+      },
+      "clearFilterCommitMs": {
+        "median": 8.199999999254942,
+        "min": 7,
+        "max": 8.600000001490116
+      },
+      "scrollP50Ms": {
+        "median": 16.700000002980232,
+        "min": 15.800000000745058,
+        "max": 17.600000001490116
+      },
+      "scrollP95Ms": {
+        "median": 23.200000002980232,
+        "min": 22.699999999254942,
+        "max": 24.400000002235174
+      },
+      "scrollMaxMs": {
+        "median": 27.800000000745058,
+        "min": 24.800000000745058,
+        "max": 29.400000002235174
+      },
+      "scrollFps": {
+        "median": 59.56254066774551,
+        "min": 58.881741712023754,
+        "max": 60.088870935096786
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 22.400000002235174,
+        "min": 21.800000000745058,
+        "max": 25.899999998509884
+      },
+      "scrollXFps": {
+        "median": 57.57135945815192,
+        "min": 57.51014884981773,
+        "max": 58.91089108910891
+      },
+      "gridHeapMB": {
+        "median": 7.34006404876709,
+        "min": 7.33957576751709,
+        "max": 7.340590476989746
+      },
+      "workloadHeapMB": {
+        "median": 11.262252807617188,
+        "min": 10.54643726348877,
+        "max": 11.273392677307129
+      },
+      "renderedRows": 34,
+      "renderedCells": 408
+    },
+    {
+      "library": "tanstack",
+      "rows": 10000,
+      "columns": 80,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 49,
+        "min": 47.600000001490116,
+        "max": 80.10000000149012
+      },
+      "mountCommitMs": {
+        "median": 30.399999998509884,
+        "min": 29.600000001490116,
+        "max": 51.20000000298023
+      },
+      "sortCommitMs": {
+        "median": 30.200000002980232,
+        "min": 26.5,
+        "max": 43.69999999925494
+      },
+      "filterCommitMs": {
+        "median": 17.199999999254942,
+        "min": 13.5,
+        "max": 20
+      },
+      "clearFilterCommitMs": {
+        "median": 9.5,
+        "min": 6.700000002980232,
+        "max": 12.299999997019768
+      },
+      "scrollP50Ms": {
+        "median": 18.5,
+        "min": 17.899999998509884,
+        "max": 19
+      },
+      "scrollP95Ms": {
+        "median": 22.100000001490116,
+        "min": 22,
+        "max": 22.400000002235174
+      },
+      "scrollMaxMs": {
+        "median": 26.899999998509884,
+        "min": 25.199999999254942,
+        "max": 31
+      },
+      "scrollFps": {
+        "median": 59.92848869418575,
+        "min": 59.81101728997471,
+        "max": 60.07673667214209
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 22.899999998509884,
+        "min": 22.099999997764826,
+        "max": 23
+      },
+      "scrollXFps": {
+        "median": 59.88325281794562,
+        "min": 59.783973875910576,
+        "max": 60.046422444220035
+      },
+      "gridHeapMB": {
+        "median": 5.668028831481934,
+        "min": 5.668002128601074,
+        "max": 5.676638603210449
+      },
+      "workloadHeapMB": {
+        "median": 10.300954818725586,
+        "min": 10.148782730102539,
+        "max": 10.312479972839355
+      },
+      "renderedRows": 35,
+      "renderedCells": 385
+    },
+    {
+      "library": "rdg",
+      "rows": 10000,
+      "columns": 80,
+      "reps": 5,
+      "provides": {
+        "sort": "harness",
+        "filter": "none"
+      },
+      "mountPaintMs": {
+        "median": 38.5,
+        "min": 35.69999999925494,
+        "max": 43.69999999925494
+      },
+      "mountCommitMs": {
+        "median": 8,
+        "min": 7.099999997764826,
+        "max": 16.400000002235174
+      },
+      "sortCommitMs": {
+        "median": 11.800000000745058,
+        "min": 11.5,
+        "max": 11.899999998509884
+      },
+      "filterCommitMs": null,
+      "clearFilterCommitMs": null,
+      "scrollP50Ms": {
+        "median": 18.899999998509884,
+        "min": 18.700000002980232,
+        "max": 19.199999999254942
+      },
+      "scrollP95Ms": {
+        "median": 20.800000000745058,
+        "min": 20.699999999254942,
+        "max": 21.100000001490116
+      },
+      "scrollMaxMs": {
+        "median": 25.699999999254942,
+        "min": 21.099999997764826,
+        "max": 27.399999998509884
+      },
+      "scrollFps": {
+        "median": 59.86517758334763,
+        "min": 59.71197752012973,
+        "max": 59.98286203934973
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 21.900000002235174,
+        "min": 21.699999999254942,
+        "max": 22.300000000745058
+      },
+      "scrollXFps": {
+        "median": 59.92547084296271,
+        "min": 59.84711325682268,
+        "max": 59.9647266313933
+      },
+      "gridHeapMB": {
+        "median": 0.9397745132446289,
+        "min": 0.939763069152832,
+        "max": 0.9399271011352539
+      },
+      "workloadHeapMB": {
+        "median": 2.1954612731933594,
+        "min": 1.8611574172973633,
+        "max": 2.1977338790893555
+      },
+      "renderedRows": 22,
+      "renderedCells": 242
+    },
+    {
+      "library": "elite",
+      "rows": 10000,
+      "columns": 300,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 125.80000000074506,
+        "min": 117.39999999850988,
+        "max": 144.90000000223517
+      },
+      "mountCommitMs": {
+        "median": 58.399999998509884,
+        "min": 54.80000000074506,
+        "max": 77.19999999925494
+      },
+      "sortCommitMs": {
+        "median": 31.5,
+        "min": 30,
+        "max": 34.100000001490116
+      },
+      "filterCommitMs": {
+        "median": 15.699999999254942,
+        "min": 14.5,
+        "max": 33.899999998509884
+      },
+      "clearFilterCommitMs": {
+        "median": 14.299999997019768,
+        "min": 11.300000000745058,
+        "max": 24.899999998509884
+      },
+      "scrollP50Ms": {
+        "median": 18,
+        "min": 17.600000001490116,
+        "max": 18.599999997764826
+      },
+      "scrollP95Ms": {
+        "median": 21.5,
+        "min": 20.699999999254942,
+        "max": 22.399999998509884
+      },
+      "scrollMaxMs": {
+        "median": 23.900000002235174,
+        "min": 21.899999998509884,
+        "max": 28.100000001490116
+      },
+      "scrollFps": {
+        "median": 59.07759519433847,
+        "min": 58.5543472912249,
+        "max": 59.817030260312805
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 20.900000002235174,
+        "min": 20.899999998509884,
+        "max": 21.600000001490116
+      },
+      "scrollXFps": {
+        "median": 59.25409550374774,
+        "min": 58.40777461474774,
+        "max": 59.9677484377474
+      },
+      "gridHeapMB": {
+        "median": 3.2428455352783203,
+        "min": 3.2424755096435547,
+        "max": 3.245412826538086
+      },
+      "workloadHeapMB": {
+        "median": 5.207005500793457,
+        "min": 4.646817207336426,
+        "max": 5.209549903869629
+      },
+      "renderedRows": 35,
+      "renderedCells": 385
+    },
+    {
+      "library": "ag",
+      "rows": 10000,
+      "columns": 300,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 189.69999999925494,
+        "min": 176.59999999776483,
+        "max": 196.39999999850988
+      },
+      "mountCommitMs": {
+        "median": 166,
+        "min": 153.29999999701977,
+        "max": 174.59999999776483
+      },
+      "sortCommitMs": {
+        "median": 38.899999998509884,
+        "min": 36,
+        "max": 44.399999998509884
+      },
+      "filterCommitMs": {
+        "median": 40.100000001490116,
+        "min": 33.29999999701977,
+        "max": 50.5
+      },
+      "clearFilterCommitMs": {
+        "median": 8.699999999254942,
+        "min": 7.700000002980232,
+        "max": 10.400000002235174
+      },
+      "scrollP50Ms": {
+        "median": 16.400000002235174,
+        "min": 16.099999997764826,
+        "max": 18.299999997019768
+      },
+      "scrollP95Ms": {
+        "median": 22.5,
+        "min": 21.900000002235174,
+        "max": 23
+      },
+      "scrollMaxMs": {
+        "median": 26.600000001490116,
+        "min": 24.800000000745058,
+        "max": 29.899999998509884
+      },
+      "scrollFps": {
+        "median": 59.50595059503734,
+        "min": 58.983890954151185,
+        "max": 60.12226544735776
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 22.599999997764826,
+        "min": 21.900000002235174,
+        "max": 22.899999998509884
+      },
+      "scrollXFps": {
+        "median": 59.345701176851755,
+        "min": 58.907974852686614,
+        "max": 59.886266418466036
+      },
+      "gridHeapMB": {
+        "median": 7.759749412536621,
+        "min": 7.759467124938965,
+        "max": 7.760062217712402
+      },
+      "workloadHeapMB": {
+        "median": 11.178189277648926,
+        "min": 11.171754837036133,
+        "max": 11.864216804504395
+      },
+      "renderedRows": 34,
+      "renderedCells": 442
+    },
+    {
+      "library": "tanstack",
+      "rows": 10000,
+      "columns": 300,
+      "reps": 5,
+      "provides": {
+        "sort": "library",
+        "filter": "library"
+      },
+      "mountPaintMs": {
+        "median": 55.5,
+        "min": 49.600000001490116,
+        "max": 62
+      },
+      "mountCommitMs": {
+        "median": 34.899999998509884,
+        "min": 31.300000000745058,
+        "max": 37.79999999701977
+      },
+      "sortCommitMs": {
+        "median": 34.30000000074506,
+        "min": 29.599999997764826,
+        "max": 44.30000000074506
+      },
+      "filterCommitMs": {
+        "median": 25,
+        "min": 14.899999998509884,
+        "max": 26.300000000745058
+      },
+      "clearFilterCommitMs": {
+        "median": 7.399999998509884,
+        "min": 5.300000000745058,
+        "max": 11.800000000745058
+      },
+      "scrollP50Ms": {
+        "median": 18.299999997019768,
+        "min": 17.799999997019768,
+        "max": 18.699999999254942
+      },
+      "scrollP95Ms": {
+        "median": 21.800000000745058,
+        "min": 21.300000000745058,
+        "max": 22.100000001490116
+      },
+      "scrollMaxMs": {
+        "median": 25.099999997764826,
+        "min": 22.699999999254942,
+        "max": 32.899999998509884
+      },
+      "scrollFps": {
+        "median": 59.83808518129661,
+        "min": 59.726962457382555,
+        "max": 60.097974849822904
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 22.899999998509884,
+        "min": 22.099999997764826,
+        "max": 23
+      },
+      "scrollXFps": {
+        "median": 59.823044439998284,
+        "min": 59.70898143502258,
+        "max": 59.979838709677416
+      },
+      "gridHeapMB": {
+        "median": 6.226019859313965,
+        "min": 6.225695610046387,
+        "max": 6.234641075134277
+      },
+      "workloadHeapMB": {
+        "median": 20.10506820678711,
+        "min": 20.090638160705566,
+        "max": 20.25398063659668
+      },
+      "renderedRows": 35,
+      "renderedCells": 385
+    },
+    {
+      "library": "rdg",
+      "rows": 10000,
+      "columns": 300,
+      "reps": 5,
+      "provides": {
+        "sort": "harness",
+        "filter": "none"
+      },
+      "mountPaintMs": {
+        "median": 36.399999998509884,
+        "min": 34,
+        "max": 39.19999999925494
+      },
+      "mountCommitMs": {
+        "median": 14.099999997764826,
+        "min": 7.5,
+        "max": 14.699999999254942
+      },
+      "sortCommitMs": {
+        "median": 13.599999997764826,
+        "min": 11.699999999254942,
+        "max": 16.5
+      },
+      "filterCommitMs": null,
+      "clearFilterCommitMs": null,
+      "scrollP50Ms": {
+        "median": 18.800000000745058,
+        "min": 18.800000000745058,
+        "max": 19.099999997764826
+      },
+      "scrollP95Ms": {
+        "median": 21.199999999254942,
+        "min": 20.599999997764826,
+        "max": 21.800000000745058
+      },
+      "scrollMaxMs": {
+        "median": 24.800000000745058,
+        "min": 23.100000001490116,
+        "max": 26.200000002980232
+      },
+      "scrollFps": {
+        "median": 59.97681568476088,
+        "min": 59.789981409815326,
+        "max": 60.11922804894897
+      },
+      "scrollLongFramePct": {
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "scrollXP95Ms": {
+        "median": 21.699999999254942,
+        "min": 21.399999998509884,
+        "max": 22
+      },
+      "scrollXFps": {
+        "median": 59.961705129564656,
+        "min": 59.79899497487437,
+        "max": 60.08583690987125
+      },
+      "gridHeapMB": {
+        "median": 1.0022859573364258,
+        "min": 1.002274513244629,
+        "max": 1.0046701431274414
+      },
+      "workloadHeapMB": {
+        "median": 2.1800804138183594,
+        "min": 1.9232234954833984,
+        "max": 2.1830177307128906
+      },
+      "renderedRows": 22,
+      "renderedCells": 242
+    }
+  ]
+}

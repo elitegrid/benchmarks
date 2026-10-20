@@ -1,0 +1,22 @@
+{
+  // The browser-side harness and the Playwright-side spec each declare
+  // `window.__bench` — one as the real thing it installs, one as the shape it
+  // expects to find. Declaration merging requires identical modifiers, so the
+  // two live in separate projects, exactly as they do in EliteGrid's own
+  // monorepo. `pnpm lint` checks both.
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noUncheckedIndexedAccess": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "isolatedModules": true
+  },
+  "include": ["src", "vite.config.ts"]
+}

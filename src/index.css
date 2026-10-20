@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    sans-serif;
+  /* No page scroll: the only scrollable element must be the grid body, so a
+     stray document scroll cannot absorb the driven scroll deltas. */
+  overflow: hidden;
+}
